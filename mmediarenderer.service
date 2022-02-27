@@ -1,0 +1,12 @@
+[Unit]
+Description=My Media Renderer
+After=network.target sound.target
+
+[Service]
+Type=simple
+ExecStart=/bin/mymediarenderer
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
